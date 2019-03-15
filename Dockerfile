@@ -1,4 +1,4 @@
-FROM nginx:1.15.9
+FROM nginx
 
 RUN apt-get update && apt-get install -y sudo
 

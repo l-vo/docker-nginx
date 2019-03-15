@@ -1,6 +1,6 @@
 # Nginx production docker container
 
-This container use the official Nginx docker image (version 1.15.9) but is modified to be more suitable for production environement:
+This container use the official Nginx docker image but is modified to be more suitable for production environement:
 
 - The config `server_tokens` is set to `off` (leads to not display Nginx version on error pages for instance)
 - The image uses a non privilegied user `user1`
@@ -27,3 +27,5 @@ CMD ["sudo", "/run.sh"]
 ```
 
 For the rest, it works like the original Nginx image. You can refer to the [official documentation](https://hub.docker.com/_/nginx) for more information.
+
+Note that the Docker repository owns the same version tag as the official image on which it is based (from 1.15.9 version).
